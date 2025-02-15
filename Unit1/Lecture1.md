@@ -29,7 +29,7 @@ The architecture of Docker can be broken down into several key components. These
 
 Below is a visual representation of the Docker architecture:
 
-![Docker Architecture](images\Docker_Architecture.png)
+![Docker Architecture](images/Docker_Architecture.png)
 
 This diagram illustrates the relationship between the key components mentioned above. The Docker Daemon runs on the host machine and manages the creation and execution of containers. Users interact with Docker through the CLI, while the images and containers reside in the system's filesystem. The Docker registry holds the images, making it easier for users to pull and push images from a centralized location.
 
@@ -53,7 +53,7 @@ Before diving into what Docker is, it's important to clarify what Docker **isn't
 
 ## Docker vs Virtualization
 
-![Docker VS Virtualization](images\vm_vs_container.jpg)
+![Docker VS Virtualization](images/vm_vs_container.jpg)
 
 ### Docker Containers:
 - **Share the host operating system (OS) kernel**:
