@@ -4,18 +4,18 @@ Welcome to the Docker Book! Below you will find links to various topics that wil
 
 ## Topics
 
-1. [What is Docker?](Unit1\Lecture1.md#what-is-docker)
-2. [Docker Architecture Overview](Unit1\Lecture1.md#docker-architecture-overview)
-3. [Key Components of Docker Architecture](Unit1\Lecture1.md#key-components-of-docker-architecture:)
+1. [What is Docker?](Unit1/Lecture1.md#what-is-docker)
+2. [Docker Architecture Overview](Unit1/Lecture1.md#docker-architecture-overview)
+3. [Key Components of Docker Architecture](Unit1/Lecture1.md#key-components-of-docker-architecture:)
    - Docker Engine
    - Docker Images
    - Docker Containers
    - Docker Registries
    - Docker Network
    - Docker Volumes
-4. [Docker Architecture Diagram](Unit1\Lecture1.md#docker-architecture-diagram)
-5. [How Docker Works](Unit1\Lecture1.md#how-docker-works)
-6. [Conclusion](Unit1\Lecture1.md#conclusion)
+4. [Docker Architecture Diagram](Unit1/Lecture1.md#docker-architecture-diagram)
+5. [How Docker Works](Unit1/Lecture1.md#how-docker-works)
+6. [Conclusion](Unit1/Lecture1.md#conclusion)
 
 ---
 
