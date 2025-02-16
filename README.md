@@ -20,7 +20,7 @@ Welcome to the Docker Book! Below you will find links to various topics that wil
 6. [Development and Deployment Burdens](Unit1/Lecture1.md#development-and-deployment-burdens)
 7. [Why Organizations Embrace Docker Containers](Unit1/Lecture1.md#why-organizations-embrace-docker-containers)
 8. [How Docker Supports Microservices Architecture](Unit2/Docker_Microservices.md#how-docker-supports-microservices-architecture)
-9. [How Docker Supports Microservices Architecture](Unit2/Lab_Configuration_Setup.md#docker-installation-configuration)
+9. [Lab Docker Installation & Configuration](Unit2/Lab_Configuration_Setup.md#docker-installation-configuration)
 10. [Understanding Docker build and Docker file](Unit2/Docker_Dockerfile.md#what-is-a-docker-file)
 11. [Understanding Docker Networking](Unit2/Docker_Networking.md#docker-networking)
 12. [Understanding Docker Volumes](Unit2/Docker_Volume.md#docker-volumes)
