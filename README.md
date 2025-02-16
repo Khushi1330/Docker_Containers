@@ -24,11 +24,10 @@ Welcome to the Docker Book! Below you will find links to various topics that wil
 10. [Understanding Docker build and Docker file](Unit2/Docker_Dockerfile.md#what-is-a-docker-file)
 11. [Understanding Docker Networking](Unit2/Docker_Networking.md#docker-networking)
 12. [Understanding Docker Volumes](Unit2/Docker_Volume.md#docker-volumes)
-13. [Understanding Docker Layers](Unit2/Docker_Layers.md.md#docker-layers)
-14. [Lab Building Python Container](Unit2/Lab_Create_Python_Container.md#docker-container-for-python-file)
-15. [Lab Creating a streamlit app](Unit2/Lab_Create_Python_Streamlit.md#build-a-docker-image-for-streamlit-app)
-16. [Understanding Docker Hub , Registry & Tags](Unit2/Docker_Docekrhub_Tags.md#what-is-docker-hub)
-17. [What are Docker Layers](Unit2/Docker_Layers.md)
+13. [Lab Building Python Container](Unit2/Lab_Create_Python_Container.md#docker-container-for-python-file)
+14. [Lab Creating a streamlit app](Unit2/Lab_Create_Python_Streamlit.md#build-a-docker-image-for-streamlit-app)
+15. [Understanding Docker Hub , Registry & Tags](Unit2/Docker_Docekrhub_Tags.md#what-is-docker-hub)
+16. [What are Docker Layers](Unit2/Docker_Layers.md)
 
 ---
 
