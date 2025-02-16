@@ -19,6 +19,16 @@ Welcome to the Docker Book! Below you will find links to various topics that wil
 5. [How Does Docker Help Developers?](Unit1/Lecture1.md#how-does-docker-help-developers)
 6. [Development and Deployment Burdens](Unit1/Lecture1.md#development-and-deployment-burdens)
 7. [Why Organizations Embrace Docker Containers](Unit1/Lecture1.md#why-organizations-embrace-docker-containers)
+8. [How Docker Supports Microservices Architecture](Unit2/Docker_Microservices.md#how-docker-supports-microservices-architecture)
+9. [How Docker Supports Microservices Architecture](Unit2/Lab_Configuration_Setup.md#docker-installation-configuration)
+10. [Understanding Docker build and Docker file](Unit2/Docker_Dockerfile.md#what-is-a-docker-file)
+11. [Understanding Docker Networking](Unit2/Docker_Networking.md#docker-networking)
+12. [Understanding Docker Volumes](Unit2/Docker_Volume.md#docker-volumes)
+13. [Understanding Docker Layers](Unit2/Docker_Layers.md.md#docker-layers)
+14. [Lab Building Python Container](Unit2/Lab_Create_Python_Container.md#docker-container-for-python-file)
+15. [Lab Creating a streamlit app](Unit2/Lab_Create_Python_Streamlit.md#build-a-docker-image-for-streamlit-app)
+16. [Understanding Docker Hub , Registry & Tags](Unit2/Docker_Docekrhub_Tags.md#what-is-docker-hub)
+17. [What are Docker Layers](Unit2/Docker_Layers.md)
 
 ---
 
