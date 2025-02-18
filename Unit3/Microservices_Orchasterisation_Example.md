@@ -1,4 +1,4 @@
-# Microservices Orchasterisation Example 1
+# Microservices Orchasterisation Example Using Minikube & Kubectl
 
 Example of creating a basic microservices architecture in Minikube using Kubernetes and `kubectl`.
 
