@@ -47,11 +47,13 @@ Welcome to the Docker Book! Below you will find links to various topics that wil
 33. [Kubernetes Orchestrisation](Unit3/Kubernetes_Orchestrisation.md)
 34. [Life of a request](Unit3/Life_of_a_request.md)
 35. [Microservices Orchasterisation Example](Unit3/Microservices_Orchasterisation_Example.md)
-36. [Microservice Orchasterisation Docker Swarm](Unit4/Microservice_Orchasterisation_Docker_Swarm.md)
-37. [Minikube Kubectil](Unit5/Minikube_Kubectil.md)
-38. [Planning Tools](Unit6/Planning_Tools.md)
-39. [Popular tools Docker Orchestrisation Kubernetes](Unit7/Popular_tools_Docker_Orchestrisation_Kubernetes.md)
-40. [Service Discovery Tools](Unit8/Service_Discovery_Tools.md)
+36. [Microservice Orchasterisation Docker Swarm](Unit3/Microservice_Orchasterisation_Docker_Swarm.md)
+37. [Minikube Kubectil](Unit3/Minikube_Kubectil.md)
+38. [Planning Tools](Unit3/Planning_Tools.md)
+39. [Popular tools Docker Orchestrisation Kubernetes](Unit3/Popular_tools_Docker_Orchestrisation_Kubernetes.md)
+40. [Service Discovery Tools](Unit3/Service_Discovery_Tools.md)
+41. [MCQ Question Bank Section A](Question_Bank/Question_Bank_SectionA.md)
+42. [MCQ Question Bank Section B](Question_Bank/Question_Bank_SectionB.md)
 
 
 
