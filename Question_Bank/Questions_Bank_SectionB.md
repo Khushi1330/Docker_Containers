@@ -1,4 +1,4 @@
-# Debugging Python Frontends, Databases, and Docker Issues
+# Debugging Docker Issues
 
 ## 1. FastAPI container starts, but `http://localhost:8000` is unreachable
 
