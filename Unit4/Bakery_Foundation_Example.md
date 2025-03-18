@@ -1,81 +1,77 @@
-# Create a backery for Linux Base Image with Python 3.9 Pre installed
+# Backery Foundation Example for Linux OS compaitble with only python 3.9
 
-Here's a **Bakery Foundation** example that builds a **Linux machine image** with **Python 3.9** and uploads it to **Docker Hub** using `docker buildx`.  
+Here’s a simple working example for a **Bakery Foundation** that creates a **Linux-based machine image** compatible with **Python 3.9**. This example uses **HashiCorp Packer**, a widely used tool for baking immutable machine images.  
 
 ---
 
-## **Prerequisites**
+### **Prerequisites**
 - **Linux or macOS**
-- **Docker installed** (`sudo apt install docker.io -y`)
-- **Docker Buildx enabled** (`docker buildx version`)
-- **A Docker Hub account** (Sign up at [hub.docker.com](https://hub.docker.com/))
-- **Logged into Docker Hub** (`docker login`)
+- **Packer installed** (`brew install packer` or [Download Packer](https://developer.hashicorp.com/packer/downloads))
+- **AWS Account** (if creating an AMI)
 
 ---
 
-## **Step 1: Create a `Dockerfile`**
-This **Dockerfile** will define a **base image** with **Python 3.9**.
+### **Step 1: Define a Packer Template (bakery.json)**  
+Create a **Packer template file** (`bakery.json`) to bake a machine image with **Python 3.9**.
 
-```dockerfile
-# Use Ubuntu as the base image
-FROM ubuntu:20.04
-
-# Set non-interactive mode for installation
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Update and install Python 3.9
-RUN apt-get update && apt-get install -y \
-    python3.9 python3.9-venv python3.9-dev && \
-    rm -rf /var/lib/apt/lists/*
-
-# Set Python 3.9 as default
-RUN ln -sf /usr/bin/python3.9 /usr/bin/python
-
-# Verify Python installation
-RUN python --version
-
-# Default command
-CMD ["python3"]
+```json
+{
+  "variables": {
+    "aws_region": "us-east-1"
+  },
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "{{user `aws_region`}}",
+      "source_ami": "ami-0c55b159cbfafe1f0",
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "bakery-foundation-python39-{{timestamp}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo apt-get update",
+        "sudo apt-get install -y python3.9 python3.9-venv python3.9-dev"
+      ]
+    }
+  ]
+}
 ```
 
 ---
 
-## **Step 2: Build and Push the Image Using Buildx**
-Enable **Docker Buildx** and **multi-platform** support:
+### **Step 2: Initialize and Validate the Bakery**
+Run the following commands to **initialize** and **validate** the bakery template:
 
 ```sh
-docker buildx create --use
-docker buildx inspect --bootstrap
-```
-
-Now, build and **push** the image to Docker Hub:
-
-```sh
-docker buildx build --platform linux/amd64,linux/arm64 \
-    -t your-dockerhub-username/python39-bakery:latest \
-    --push .
-```
-
-Replace `your-dockerhub-username` with your **Docker Hub username**.
-
----
-
-## **Step 3: Pull and Run the Image**
-Once the image is **pushed**, you can pull and run it on any machine:
-
-```sh
-docker run --rm -it your-dockerhub-username/python39-bakery python --version
-```
-
-You should see output like:
-
-```
-Python 3.9.x
+packer init .
+packer validate bakery.json
 ```
 
 ---
 
-## **Conclusion**
-This **Bakery Foundation** method ensures a **consistent** Python 3.9 environment, deployable across any system via Docker. 🚀
+### **Step 3: Bake the Machine Image**
+Now, build the image using:
 
-Would you like to **extend** this with additional tools (e.g., `pip`, `venv`, or `Jupyter`)?
+```sh
+packer build bakery.json
+```
+
+This will create a **Linux-based machine image (AMI)** with **Python 3.9 pre-installed**.
+
+---
+
+### **Step 4: Deploy and Use the Baked Image**
+Once the image is baked:
+- **For AWS:** Find the created AMI in **EC2 -> AMIs** and launch an instance.
+- **For Local VM (Alternative):** You can use **VirtualBox or QEMU** to bake an image for local use.
+
+---
+
+### **Conclusion**
+This **Bakery Foundation** approach ensures that all deployments start with a **pre-configured** Linux image containing Python 3.9. This minimizes configuration drift and enhances consistency across environments.
+
+Would you like an example for **Docker-based baking** instead? 🚀
