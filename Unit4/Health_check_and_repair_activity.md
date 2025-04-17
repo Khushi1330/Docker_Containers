@@ -1,7 +1,7 @@
 # Health check and repair activity
 ---
 
-## 📊 Recreated Table: **Kubernetes Failure Recovery Times (No Redundancy Setup)**
+## 📊 **Kubernetes Failure Recovery Times (No Redundancy Setup)**
 
 | **Failure Trigger**       | **Reaction Time (s)** | **Repair Time (s)** | **Recovery Time (s)** | **Outage Time (s)** |
 |--------------------------|------------------------|----------------------|------------------------|----------------------|
